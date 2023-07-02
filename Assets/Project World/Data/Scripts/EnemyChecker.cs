@@ -43,7 +43,7 @@ public class EnemyChecker : MonoBehaviour
         {
             Debug.Log("Enemy in Sight Range");
             headBone.transform.LookAt(targetEnemy); //this gotta be written in its own function
-            chainIKRig.weight = Mathf.MoveTowards(chainIKRig.weight, 0, rigSpeed * Time.deltaTime);
+            chainIKRig.weight = Mathf.MoveTowards(chainIKRig.weight, 1, rigSpeed * Time.deltaTime);
             //Debug.Log(chainIKRig.weight);
             isHooked = false;
             Debug.Log(isHooked);
